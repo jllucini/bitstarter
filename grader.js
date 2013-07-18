@@ -68,7 +68,6 @@ var loadChecks = function(checksfile) {
 var checkHtmlURL = function(urlfile, checksfile) {
     var processURL = buildfn(checksfile);
     rest.get(urlfile).on('complete', processURL);
-    console.log ("end url");
 };
 
 var checkHtmlFile = function(htmlfile, checksfile) {
